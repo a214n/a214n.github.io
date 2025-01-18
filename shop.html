@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Sister Wives Hockey Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lacquer&family=Oswald&family=Oxygen&family=Permanent+Marker&family=Tilt+Prism&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/sisterwiveslogo.png" alt="Sister Wives Logo" class="img img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+                            <li><a class="dropdown-item" href="./players.html">Players</a></li>
+                            <li><a class="dropdown-item" href="./events.html">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./social.html">Social</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container shop-bottom">
+        <!--Coming Soon-->
+        <section>
+            <h1 class="text-center m-5 p-5">SHOP COMING SOON</h1>
+        </section>
+
+        <!-- Shop Section-->
+        <section class="container mt-5 d-none">
+            <h1>Shop Our Merchandise</h1>
+            <div class="row">
+                <!-- Example Item -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./images/img-3.png" class="card-img-top" alt="Hockey Jersey">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Custom Sister Wives Hockey Jersey</h5>
+                            <p class="card-text">$50.00</p>
+                            <button class="btn btn-primary" onclick="checkout('jersey', 50)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more merchandise here -->
+            </div>
+        </section> 
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <ul class="footer-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./players.html">Players</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="./social.html">Social</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="footer-info">
+            <p>&copy; 2024 Sister Wives Hockey Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include Stripe or PayPal Checkout Script -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        // Function to handle checkout
+        function checkout(itemName, price) {
+            alert(`Proceeding to checkout for ${itemName} priced at $${price}`);
+            // Stripe or PayPal integration code will go here
+        }
+    </script>
+</body>
+</html>

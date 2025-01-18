@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    background: linear-gradient(to right, #ff007f, #00ffff);
+    font-family: 'Permanent Marker', cursive;
+}
+
+.navbar-brand img {
+    height: 50px;
+    background-color: none;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-brand img {
+    height: 100px;
+    width: auto; 
+}
+
+.dropdown-menu {
+    background-color: #00ffff;
+    border: 2px solid black; 
+}
+
+.dropdown-item {
+    color: black; 
+    font-weight: bold;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item.active {
+    background-color: rgba(255, 255, 255, 0.2); /* Light white transparency */
+    color: #ff007f; /* Highlight text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Remove Bootstrap default shadow */
+.dropdown-menu {
+    box-shadow: none;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: "Oxygen", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    
+}
+
+.carousel {
+    margin-top: 40px;
+}
+
+#carouselExample {
+    height: 80vh;
+    overflow: hidden;
+}
+
+#carouselExample .carousel-inner,
+#carouselExample .carousel-item,
+#carouselExample img {
+    height: 100%;
+    object-fit: cover; 
+}
+
+.carousel-inner h1,
+.carousel-inner h2 {
+    font-family: 'Lacquer', sans-serif;
+    font-size: 5rem;
+}
+
+.navbar .nav-link {
+    font-size: 1.25rem;
+}
+
+.navbar .nav-link.active {
+    color: #ff007f;
+    font-weight: bold;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+
+.border-style {
+    border: 1px solid black;
+}
+
+.img-1 {
+    background-image: url(./images/img-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.img-2 {
+    background-image: url(./images/img-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.img-3 {
+    background-image: url(./images/img-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.img-1, .img-2, .img-3 {
+    height: 300px;
+}
+
+footer {
+    background: linear-gradient(to right, #ff007f, #00ffff);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+footer .footer-nav li {
+    margin: 0 10px;
+}
+
+footer .footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-nav a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-info {
+    margin-bottom: 10px;
+}
+
+.modal-header {
+    background: linear-gradient(to right, #ff007f, #00ffff);
+    color: white;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto; 
+}
+
+tbody td {
+    text-align: center; 
+    vertical-align: middle; 
+}
+
+table.dataTable thead th {
+    text-align: center; /* Ensures the text inside <th> is centered */
+    vertical-align: middle;        /* Centers the text vertically */
+}
+
+/*table tr td:hover {
+    background-color: #ff007f !important; 
+    cursor: pointer;
+    color: white; 
+}*/
+
+.shop-bottom {
+    height: 50vh;
+}
+
+form {
+    background: linear-gradient(to right, #ff007f, #00ffff);
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form .form-label {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+
+form .form-control {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form .form-control:focus {
+    border: none;
+    outline: 2px solid #ff007f;
+    box-shadow: 0 0 5px #ff007f;
+}
+
+form button {
+    background-color: #00ffff;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: white;
+    color: #ff007f;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
